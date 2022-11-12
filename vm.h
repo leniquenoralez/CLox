@@ -21,8 +21,8 @@ typedef enum
     INTERPRET_RUNTIME_ERROR,
 } InterpretResult;
 
-void initVm();
-void freeVm();
+void initVM();
+void freeVM();
 InterpretResult interpret(Chunk *chunk);
 void push(Value value);
 Value pop();

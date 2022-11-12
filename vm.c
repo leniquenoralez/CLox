@@ -8,7 +8,7 @@ static void resetStack()
 {
     vm.stackTop = vm.stack;
 }
-void intiVM()
+void initVM()
 {
     resetStack();
 }
@@ -82,8 +82,8 @@ static InterpretResult run()
         }
         }
     }
-#undef READ_BYTE;
-#undef READ_CONSTANT;
+#undef READ_BYTE
+#undef READ_CONSTANT
 #undef BINARY_OP
 }
 InterpretResult interpret(Chunk *chunk)
